@@ -1,0 +1,38 @@
+body{
+	font-family: Segoe UI;
+	color: #fff;
+	font-size: 14px;
+	background-color: #fff;
+	
+}
+header{
+	padding: 20px 0;
+}
+
+
+#hero h1{
+	font-size: 80px;
+	font-weight: 700;
+}
+
+#hero p{
+	font-size: 20px;
+}
+
+#hero{
+	background-image: url( "../../Portafolio/img/fondo_hero.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px 0;
+	text-align: center;
+}
+
+#hero h1{
+	font-size: 80px;
+	font-weight: 700;
+}
+
+#hero p{
+	font-size: 20px;
+}
