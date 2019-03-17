@@ -1,38 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
 body{
-	font-family: Segoe UI;
-	color: #fff;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
-	background-color: #fff;
-	
+	color: #fff;
+	background-color: #3a0838;
 }
+.header-area.sticky {
+    box-shadow: #3a0838;
+	width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.header-area.sticky .navbar-default{
+	background-color: #884bdf;
+}
+
 header{
 	padding: 20px 0;
 }
 
-
-#hero h1{
-	font-size: 80px;
-	font-weight: 700;
-}
-
-#hero p{
-	font-size: 20px;
-}
-
-#hero{
-	background-image: url( "../../Portafolio/img/fondo_hero.png");
+#inicio{
+	background-image: url(  ../img/slider-3.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 100px 0;
-	text-align: center;
+
 }
 
-#hero h1{
-	font-size: 80px;
+#inicio h1{
+	font-size: 40px;
 	font-weight: 700;
 }
 
-#hero p{
+#inicio p{
 	font-size: 20px;
+}
+
+.btn-rectangulo{
+	background-color: #ffaa00;
+	border:3px solid #2d082d;
+	color: #2d082d;
+	border-radius: 0;
+	padding: 10px 40px;
+	text-transform: lowercase;
+	font-weight: 600;
+}
+.btn-rectangulo:hover{
+	background-color: #3a0838;
+	color: #ffaa00;
+	border:3px solid #ffaa00;
+}
+
+#acerca h2{
+	color: #ffaa00;
+	font-weight: bold;
+}
+
+.quien_soy{
+	padding: 40px 20px;
+}
+
+#servicios{
+	background-color: #ffaa00;
+	color: #2d082d;
+	padding: 120px;
+	
+}
+
+#servicios h4{
+	text-align: center;
+	font-weight: 200;
+	font-size: 20px;
+	padding-bottom: 85px;
+	
+}
+
+#servicios h3{
+	font-weight: 600;
+	text-align: center;
+	padding-top: 30px;
+	
+}
+
+#servicios p{
+	text-align: center;
+	font-size: 16px;
+	
+}
+
+#servicios h2{
+	
+	text-align: center;
+	padding-bottom: 70px;
+	font-size: 50px;
+}
+
+.icono{
+	font-size: 30px;
+	
+}
+
+#contacto{
+	font-size: 34px;
+	padding: 40px 15px;
+	background-color: #220421;
+	text-align: center;
+	
+}
+
+#contacto h1{
+	font-weight: bold;
+}
+
+#content p{
+	font-size: 25px;
+	padding: 30px 0;
+	text-align: center;
+}
+
+#content {
+	margin: 40px;
+	padding: auto;
+}
+
+#footer{
+	background-color: #220421;
+	padding: 120px;
+	text-align: center;
+}
+
+#footer h3{
+	font-size: 40px;
+}
+
+#copyright{
+	padding: 20px;
+}
+
+.icono_2{
+	font-size: 70px;
+	padding: 40px, 70px;
+}
+
+.foto {
+	position:relative;
+	overflow: hidden;
+}
+.overlay {
+	position:absolute;
+	top: 40%;
+	left: 0;
+	width:90%;
+	padding: 30px 40px;
+	background-color: rgba(0,0,0,0.70);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.overlay_2 {
+	position:absolute;
+	top: 40%;
+	left: 0;
+	width:90%;
+	padding: 30px 40px;
+	background-color: rgba(0,0,0,0.70);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+ .foto:hover .overlay{
+	opacity: 1;
+	 transition: all 0.3s ease-in-out;
+	 transform: translate3d(5%,0,0)
+}
+
+.foto img{
+	transition: all 0.3s ease-in-out;
+}
+
+.foto:hover img{
+	transform: scale(1.06);
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+@media (min-width:480px) and (max-width:1024px){
+	
+	.carousel-caption h1{
+		font-size: 10px;
+	}
+	.carousel-caption p{
+		display: none;
+	}
+	
+	
+}
+
+
+/*Celular*/
+@media (max-width:480px){
+	
+	.carousel-caption h1{
+		font-size: 5px;
+	}
+	.carousel-caption p{
+		display: none;
+	}
+	.carousel-caption .btn-rectangulo{
+		padding: 4px 10px;
+	}
+	.carousel-caption{
+		top: 20%;
+	}
+	.btn-center{
+		text-align: center;
+		margin: auto;
+		display: block;
+		width: 50%;
+	}
+	.titulo{
+		text-align: center;
+	}
+	.titulo:after{
+		margin: 15px auto;
+	}
+	
+	
 }
